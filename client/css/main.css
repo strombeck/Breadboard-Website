@@ -1,0 +1,85 @@
+html{
+	background:#dc52ff;
+	overflow: auto;
+}
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+body {
+	/* background-position:fixed causes background jumping issues on scroll on
+	Chrome for Android as well as whitespace showing on the bottom as the navigation bar is scrolled out of view.*/
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#6b10df), to(#dc52ff));
+	background: -webkit-linear-gradient(#6b10df, #dc52ff);
+	background: -moz-linear-gradient(#6b10df, #dc52ff);
+	background: -o-linear-gradient(#6b10df, #dc52ff);
+	background: linear-gradient(#6b10df, #dc52ff);
+	color:#fff;
+	font: 400 0 Arial, sans-serif;
+	text-align: center;
+ 	text-shadow: 0 -1px 1px rgba(0,0,0,.2);
+}
+a{
+	background:-webkit-gradient(linear, 0 100%, 0 0, color-stop(0.5, rgba(255,255,255,0)), color-stop(0.5, rgba(255,255,255,.6)));
+	background:-webkit-linear-gradient(rgba(255,255,255,0) 50%, rgba(255,255,255,.6) 50%);
+	background:-moz-linear-gradient(rgba(255,255,255,0) 50%, rgba(255,255,255,.6) 50%);
+	background:-o-linear-gradient(rgba(255,255,255,0) 50%, rgba(255,255,255,.6) 50%);
+	background:linear-gradient(rgba(255,255,255,0) 50%, rgba(255,255,255,.6) 50%) 0 1em/2px 2px repeat-x;
+	color: #fff;
+	color: rgba(255,255,255,.9);
+	transition: color .2s ease-in-out;
+	text-shadow:0 1px 0 #dc52ff;
+	text-decoration:none;
+}
+a:hover, a:focus{
+	color: #fff;
+}
+a:active{
+	color: #6b10df;
+}
+::selection {
+    color: white;
+    background: #6b10df;
+    text-shadow:0 -1px #dc52ff;
+}
+.container{
+	min-height: 160px;
+}
+.menu{
+	padding:1em;
+	font-size:initial;
+	position:absolute;
+	top:0;
+	right:0;
+	z-index:1;
+}
+.inner-container{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	font-size:0;
+}
+.inner-container:before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+}
+.content{
+	display: inline-block;
+	vertical-align: middle;
+	font-size:medium;
+}
+.content img{
+	height:auto;
+	max-width:320px;
+	width:100%;
+}
+.content p{
+	font-weight:700;
+	font-size:1.5em;
+}

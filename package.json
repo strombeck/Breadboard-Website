@@ -1,0 +1,16 @@
+{
+  "name": "breadboardai",
+  "version": "0.0.1",
+  "description": "Breadboard.ai",
+  "main": "server.js",
+  "author": "David Murdoch <david@davidmurdoch.com>",
+  "dependencies": {
+    "express": "4.14.0",
+    "ghost": "^0.10.1",
+    "parse-database-url": "0.3.0",
+    "pg": "6.1.0"
+  },
+  "engines": {
+    "node": "^4.2.6"
+  }
+}
